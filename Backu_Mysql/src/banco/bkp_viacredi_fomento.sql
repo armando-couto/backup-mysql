@@ -1,0 +1,470 @@
+-- MySQL dump 10.13  Distrib 5.5.27, for Win64 (x86)
+--
+-- Host: localhost    Database: viacredi_fomento
+-- ------------------------------------------------------
+-- Server version	5.5.27
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `banco`
+--
+
+DROP TABLE IF EXISTS `banco`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `banco` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `cod_banco` varchar(20) NOT NULL,
+  `descricao` varchar(80) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=127 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `banco`
+--
+
+LOCK TABLES `banco` WRITE;
+/*!40000 ALTER TABLE `banco` DISABLE KEYS */;
+INSERT INTO `banco` VALUES (1,'248','Banco Boavista Interatlântico S.A.'),(2,'492','ING Bank N.V.'),(3,'045','Banco Opportunity S.A.'),(4,'756','Banco Cooperativo do Brasil S.A. - BANCOOB'),(5,'422','Banco Safra S.A.'),(6,'   ','Standard Chartered Bank (Brasil) S/A–Bco Invest.'),(7,'409','UNIBANCO - União de Bancos Brasileiros S.A.'),(8,'376','Banco J. P. Morgan S.A.'),(9,'M18','Banco Ford S.A.'),(10,'041','Banco do Estado do Rio Grande do Sul S.A.'),(11,'107','Banco BBM S.A.'),(12,'479','Banco ItaúBank S.A.'),(13,'012','Banco Standard de Investimentos S.A.'),(14,'652','Itaú Unibanco Holding S.A.'),(15,'029','Banco Banerj S.A.'),(16,'604','Banco Industrial do Brasil S.A.'),(17,'641','Banco Alvorada S.A.'),(18,'745','Banco Citibank S.A.'),(19,'073','BB Banco Popular do Brasil S.A.'),(20,'399','HSBC Bank Brasil S.A. - Banco Múltiplo'),(21,'044','Banco BVA S.A.'),(22,'M09','Banco Itaucred Financiamentos S.A.'),(23,'740','Banco Barclays S.A.'),(24,'047','Banco do Estado de Sergipe S.A.'),(25,'083-3','Banco da China Brasil S.A.'),(26,'488','JPMorgan Chase Bank'),(27,'256','Banco Fator S.A.'),(28,'078','BES Investimento do Brasil S.A.-Banco de Investimento'),(29,'389','Banco Mercantil do Brasil S.A.'),(30,'637','Banco Sofisa S.A.'),(31,'749','Banco Simples S.A.'),(32,'341','Itaú Unibanco S.A.'),(33,'746','Banco Modal S.A.'),(34,'069','BPN Brasil Banco Múltiplo S.A.'),(35,'453','Banco Rural S.A.'),(36,'752','Banco BNP Paribas Brasil S.A.'),(37,'623','Banco Panamericano S.A.'),(38,'739','Banco BGN S.A.'),(39,'356','Banco Real S.A.'),(40,'031','Banco Beg S.A.'),(41,'208','Banco BTG Pactual S.A.'),(42,'184','Banco Itaú BBA S.A.'),(43,'318','Banco BMG S.A.'),(44,'072','Banco Rural Mais S.A.'),(45,'320','Banco Industrial e Comercial S.A.'),(46,'081-7','Concórdia Banco S.A.'),(47,'001','Banco do Brasil S.A.'),(48,'748','Banco Cooperativo Sicredi S.A.'),(49,'638','Banco Prosper S.A.'),(50,'   ','Banco Itaucard S.A.'),(51,'   ','Banco CSF S.A.'),(52,'004','Banco do Nordeste do Brasil S.A.'),(53,'082-5','Banco Topázio S.A.'),(54,'487','Deutsche Bank S.A. - Banco Alemão'),(55,'225','Banco Brascan S.A.'),(56,'719','Banif-Banco Internacional do Funchal (Brasil)S.A.'),(57,'215','Banco Comercial e de Investimento Sudameris S.A.'),(58,'024','Banco de Pernambuco S.A. - BANDEPE'),(59,'747','Banco Rabobank International Brasil S.A.'),(60,'M14','Banco Volkswagen S.A.'),(61,'224','Banco Fibra S.A.'),(62,'505','Banco Credit Suisse (Brasil) S.A.'),(63,'025','Banco Alfa S.A.'),(64,'653','Banco Indusval S.A.'),(65,'473','Banco Caixa Geral - Brasil S.A.'),(66,'M08','Banco Citicard S.A.'),(67,'065','Banco Bracce S.A.'),(68,'249','Banco Investcred Unibanco S.A.'),(69,'611','Banco Paulista S.A.'),(70,'233','Banco Cifra S.A.'),(71,'M19','Banco CNH Capital S.A.'),(72,'   ','Banco Yamaha Motor S.A.'),(73,'000','Banco Bankpar S.A.'),(74,'062','Hipercard Banco Múltiplo S.A.'),(75,'M06','Banco de Lage Landen Brasil S.A.'),(76,'218','Banco Bonsucesso S.A.'),(77,'104','Caixa Econômica Federal'),(78,'063','Banco Ibi S.A. Banco Múltiplo'),(79,'021','BANESTES S.A. Banco do Estado do Espírito Santo'),(80,'M16','Banco Rodobens S.A.'),(81,'230','Unicard Banco Múltiplo S.A.'),(82,'   ','Banco Fidis S.A.'),(83,'M07','Banco GMAC S.A.'),(84,'250','BCV - Banco de Crédito e Varejo S.A.'),(85,'040','Banco Cargill S.A'),(86,'037','Banco do Estado do Pará S.A.'),(87,'612','Banco Guanabara S.A.'),(88,'755','Bank of America Merrill Lynch Banco Múltiplo S.A.'),(89,'626','Banco Ficsa S.A.'),(90,'643','Banco Pine S.A.'),(91,'119','Banco Western Union do Brasil S.A.'),(92,'064','Goldman Sachs do Brasil Banco Múltiplo S.A.'),(93,'246','Banco ABC Brasil S.A.'),(94,'M11','Banco IBM S.A.'),(95,'M20','Banco Toyota do Brasil S.A.'),(96,'707','Banco Daycoval S.A.'),(97,'394','Banco Finasa BMC S.A.'),(98,'237','Banco Bradesco S.A.'),(99,'464','Banco Sumitomo Mitsui Brasileiro S.A.'),(100,'M22','Banco Honda S.A.'),(101,'003','Banco da Amazônia S.A.'),(102,'070','BRB - Banco de Brasília S.A.'),(103,'214','Banco Dibens S.A.'),(104,'033','Banco Santander (Brasil) S.A.'),(105,'M23','Banco Volvo (Brasil) S.A.'),(106,'634','Banco Triângulo S.A.'),(107,'217','Banco John Deere S.A.'),(108,'366','Banco Société Générale Brasil S.A.'),(109,'751','Scotiabank Brasil S.A. Banco Múltiplo'),(110,'655','Banco Votorantim S.A.'),(111,'477','Citibank S.A.'),(112,'204','Banco Bradesco Cartões S.A.'),(113,'394','Banco Bradesco Financiamentos S.A.'),(114,'370','Banco WestLB do Brasil S.A.'),(115,'610','Banco VR S.A.'),(116,'263','Banco Cacique S.A.'),(117,'633','Banco Rendimento S.A.'),(118,'036','Banco Bradesco BBI S.A.'),(119,'222','Banco Credit Agricole Brasil S.A.'),(120,'229','Banco Cruzeiro do Sul S.A.'),(121,'074','Banco J. Safra S.A.'),(122,'M03','Banco Fiat S.A.'),(123,'096','Banco BM&F de Serviços de Liquidação e Custódia S.A'),(124,'079','Banco Original do Agronegócio S.A.'),(125,'600','Banco Luso Brasileiro S.A.'),(126,'456','Banco de Tokyo-Mitsubishi UFJ Brasil S.A.');
+/*!40000 ALTER TABLE `banco` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cheque`
+--
+
+DROP TABLE IF EXISTS `cheque`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cheque` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `valor` decimal(20,2) DEFAULT NULL,
+  `status` enum('ABERTO','COMPENSADO','DEVOLVIDO','VENCIDO') DEFAULT NULL,
+  `valor_pagar` decimal(20,2) DEFAULT NULL,
+  `numero_cheque` varchar(40) NOT NULL,
+  `vencimento` date NOT NULL,
+  `taxa` decimal(4,2) NOT NULL,
+  `data_cadastro` date NOT NULL,
+  `cliente_id` bigint(20) DEFAULT NULL,
+  `lote` bigint(20) DEFAULT NULL,
+  `emitente_conta_id` bigint(20) DEFAULT NULL,
+  `compensacao` int(11) DEFAULT NULL,
+  `taxa_iof` decimal(4,2) DEFAULT NULL,
+  `vencimento_prorrogado` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_cheque_cliente_id` (`cliente_id`),
+  KEY `FK_cheque_emitente_conta_id` (`emitente_conta_id`),
+  KEY `FK_cheque_lote_id` (`lote`),
+  CONSTRAINT `FK_cheque_cliente_id` FOREIGN KEY (`cliente_id`) REFERENCES `cliente` (`id`),
+  CONSTRAINT `FK_cheque_emitente_conta_id` FOREIGN KEY (`emitente_conta_id`) REFERENCES `emitente_conta` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cheque`
+--
+
+LOCK TABLES `cheque` WRITE;
+/*!40000 ALTER TABLE `cheque` DISABLE KEYS */;
+INSERT INTO `cheque` VALUES (1,1000.00,'ABERTO',456.81,'1234567890','2013-02-07',6.00,'2012-07-29',1,NULL,3,10,4.00,NULL),(2,2000.00,'COMPENSADO',1637.38,'TESTEEE','2012-10-04',5.67,'2012-07-29',1,NULL,2,2,4.00,NULL),(3,4000.00,'VENCIDO',3763.75,'43543543543','2012-08-05',5.67,'2012-07-29',1,NULL,3,2,4.00,NULL),(4,1000.00,'VENCIDO',940.94,'3213214324','2012-08-07',5.67,'2012-07-31',1,NULL,3,10,4.00,NULL),(5,10000.00,'ABERTO',6720.90,'42343543543','2012-12-09',5.67,'2012-07-31',1,NULL,7,6,4.00,NULL),(6,3000.00,'VENCIDO',2752.75,'453454654','2012-08-19',5.67,'2012-07-31',1,1,4,5,4.00,NULL),(7,4000.00,'VENCIDO',1798.54,'4543654654','2012-08-19',56.76,'2012-07-31',2,2,7,5,4.00,NULL),(9,2000.00,'VENCIDO',1835.17,'FSDFDSFDS','2012-08-19',5.67,'2012-07-31',1,1,3,2,4.00,NULL),(10,34544.44,'VENCIDO',31492.88,'43534534','2012-08-22',5.67,'2012-07-31',1,1,2,2,4.00,NULL),(12,112.22,'VENCIDO',100.52,'4234234324777','2012-08-27',5.67,'2012-07-31',1,1,3,5,4.00,NULL),(13,1000.00,'VENCIDO',979.82,'32543534543543','2012-08-07',5.00,'2012-07-31',1,1,3,4,0.00,NULL),(14,43343.43,'VENCIDO',38648.46,'4535435','2012-08-28',5.67,'2012-07-31',1,NULL,7,6,4.00,NULL),(15,1000.00,'VENCIDO',846.49,'324325345','2012-08-07',32.43,'2012-07-31',9,4,3,2,4.00,NULL),(16,1000.00,'VENCIDO',767.02,'23543534','2012-08-07',44.44,'2012-07-31',3,3,3,4,4.00,NULL),(17,1000.00,'VENCIDO',973.21,'234324324324','2012-08-07',5.67,'2012-07-31',1,NULL,2,6,0.00,NULL),(18,1000.00,'VENCIDO',933.00,'34235345','2012-08-07',5.00,'2012-07-31',1,NULL,3,8,4.00,NULL),(19,1000.00,'ABERTO',35.91,'23453TERTREYTR','2013-08-07',5.00,'2012-07-31',1,NULL,4,20,4.00,NULL),(20,1000.00,'VENCIDO',943.21,'1234567890','2012-08-07',5.00,'2012-07-31',1,NULL,3,2,4.00,NULL),(21,1000.00,'VENCIDO',946.69,'543534534','2012-08-07',5.67,'2012-08-03',1,NULL,4,2,4.00,NULL),(22,1000.00,'ABERTO',728.59,'232323','2012-12-07',5.00,'2012-08-07',15,NULL,13,2,4.00,NULL),(23,22222.22,'ABERTO',19208.87,'31124324','2012-12-19',2.00,'2012-08-07',15,NULL,8,2,4.00,NULL),(24,1000.00,'VENCIDO',948.61,'312321','2012-08-11',5.67,'2012-08-08',1,NULL,9,2,4.00,NULL),(25,1000.00,'VENCIDO',927.38,'234324324','2012-08-17',5.67,'2012-08-05',1,NULL,9,4,4.00,NULL),(26,22.22,'VENCIDO',21.12,'34534534','2012-08-11',5.67,'2012-08-09',1,NULL,3,2,4.00,NULL),(27,3000.00,'VENCIDO',2857.26,'32423','2012-08-11',5.67,'2012-08-09',1,NULL,7,2,4.00,NULL),(28,3000.00,'VENCIDO',2505.49,'423432534534','2012-04-12',44.44,'2012-09-07',3,3,3,2,4.00,NULL),(29,200.00,'VENCIDO',153.40,'234324','2012-09-12',44.44,'2012-09-07',3,3,7,6,4.00,NULL),(30,600.00,'VENCIDO',569.57,'455667','2012-09-22',4.00,'2012-09-17',18,NULL,7,2,4.00,NULL),(31,700.00,'VENCIDO',656.92,'32423432','2012-09-30',4.00,'2012-09-17',18,NULL,13,2,4.00,NULL),(32,1200.00,'COMPENSADO',1077.85,'12345','2012-10-30',4.00,'2012-09-17',18,NULL,14,2,4.00,NULL),(33,100.00,'VENCIDO',89.34,'324324','2012-09-20',32.43,'2012-09-17',14,NULL,14,2,4.00,NULL),(34,1.12,'ABERTO',1.02,'534534','2012-10-07',44.44,'2012-10-07',3,NULL,3,2,4.00,NULL),(35,1.22,'ABERTO',1.12,'WEREWR','2012-10-07',44.44,'2012-10-07',3,NULL,3,2,4.00,'2012-10-07');
+/*!40000 ALTER TABLE `cheque` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cliente`
+--
+
+DROP TABLE IF EXISTS `cliente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cliente` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `contador` bigint(20) NOT NULL,
+  `limite` decimal(20,2) DEFAULT NULL,
+  `status` enum('ATIVO','INATIVO','ANALISE','REPROVADO') DEFAULT NULL,
+  `perfil` enum('CLIENTE') DEFAULT NULL,
+  `taxa` decimal(4,2) NOT NULL,
+  `senha` varchar(50) NOT NULL,
+  `data_cadastro` date NOT NULL,
+  `observacao` text,
+  `entidade_id` bigint(20) DEFAULT NULL,
+  `limite_disponivel` decimal(20,2) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_cliente_entidade_id` (`entidade_id`),
+  CONSTRAINT `FK_cliente_entidade_id` FOREIGN KEY (`entidade_id`) REFERENCES `entidade` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cliente`
+--
+
+LOCK TABLES `cliente` WRITE;
+/*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
+INSERT INTO `cliente` VALUES (1,23,5000.00,'ATIVO','CLIENTE',5.67,'202cb962ac59075b964b07152d234b70','2012-07-22','<P>TESTE<BR><BR><BR><BR><BR><BR><BR> </P><P><BR></P><P>OKKKKK<BR></P><P><BR></P><P>OK.</P>',1,-2022.22),(2,0,0.00,'ATIVO','CLIENTE',56.76,'3B37C834C6749B16C56E7FFC44F2FEA5','2012-07-22','<P>TETSE</P><P><BR /></P><P><BR /></P><P><BR /></P><P>D.</P>',3,2000.00),(3,0,32323232.32,'ATIVO','CLIENTE',44.44,'32D67ADB0F0B1B8E35724D0F00B3C584','2012-07-24','<P>GDFGFDHFGH</P><P><BR /></P><P><BR /></P><P><BR /></P><P>FSDFDS</P><P>F</P><P>SD</P><P>FS</P><P>DF</P><P>SDFSDFSDF</P>',6,797.66),(9,0,3435.45,'ATIVO','CLIENTE',32.43,'1F79B8DA16E0F5571F1621A5360BDC9E','2012-07-24','<P>FSDHFSDG</P><P>DG</P><P>DF</P><P>G</P><P>DF</P><P>G</P><P>DF</P><P>GD</P><P>FGDFGDFG</P><P> </P><P> </P><P> </P><P>DFGDFGDF</P>',2,5000.00),(10,0,343.43,'ATIVO','CLIENTE',4.00,'D528D1F5CBEAB8389A3D8BECD9FE379','2012-07-24','DSFDSGFDGDF',7,6000.00),(11,0,3434.34,'ATIVO','CLIENTE',32.43,'75B4F96504DA295696D5C302EE3ACA14','2012-07-24','<P>FGFDGFD</P><P>G</P><P>HG</P><P>FH</P><P>G</P><P>FH</P><P>G</P><P>FHFGHHJHG</P>',5,7000.00),(12,0,34.34,'ATIVO','CLIENTE',32.43,'C4C7A20AD85253337E34FE2D982610C8','2012-07-24','<P>TESTE</P><P> </P><P> </P><P>TESTE</P>',4,2000.00),(13,0,0.00,'REPROVADO','CLIENTE',32.43,'52C17AC2701F24B1F2ACBE828574F0D0','2012-07-31','<P>REPROVEI PARA TESTAR............</P>',8,3000.00),(14,0,3232.32,'ATIVO','CLIENTE',32.43,'41F8F7546119649B864CED371BA8C5A','2012-08-07','<P>TESTE LOCAL.</P>',9,3900.00),(15,0,234324.23,'ATIVO','CLIENTE',32.43,'56DEE0DAD9E2A18AE943065A49A2BEDC','2012-08-07','',12,2000.00),(16,0,3243.24,'ATIVO','CLIENTE',32.43,'E0D5FA265114B7DF82FC2AD740C8073B','2012-08-07','324324',13,3000.00),(17,0,100000.00,'ATIVO','CLIENTE',4.00,'5121A574E56FF58C91007630AE1C136B','2012-08-29','<P>TESTETEEEEEEE</P><P>&NBSP;</P><P>&NBSP;</P><P>&NBSP;</P><P>&NBSP;</P><P>LOCAL.</P>',16,100000.00),(18,0,1000.00,'ATIVO','CLIENTE',4.00,'223847CB62513644BDD0E6C08A9798E2','2012-09-17','TESTEEEEEE.',17,-300.00),(19,0,323.23,'ATIVO','CLIENTE',32.43,'F7C8C992E764A9EEC6EA4D7F9CD8E3E1','2012-09-30','<P>TESJSFDDF</P><P><BR /></P><P><BR /></P><P>SD</P><P>F</P><P>DS</P><P>GF</P><P>SDG.</P>',18,323.23),(21,0,0.00,'ANALISE','CLIENTE',5.60,'C46E61A7335EB05A30B0113A9248D25D','2012-10-04','',22,NULL);
+/*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cliente_conta`
+--
+
+DROP TABLE IF EXISTS `cliente_conta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cliente_conta` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `agencia` varchar(10) NOT NULL,
+  `conta` varchar(20) NOT NULL,
+  `data_cadastro` date NOT NULL,
+  `cliente_id` bigint(20) DEFAULT NULL,
+  `banco_id` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_cliente_conta_cliente_id` (`cliente_id`),
+  KEY `FK_cliente_conta_banco_id` (`banco_id`),
+  CONSTRAINT `FK_cliente_conta_banco_id` FOREIGN KEY (`banco_id`) REFERENCES `banco` (`id`),
+  CONSTRAINT `FK_cliente_conta_cliente_id` FOREIGN KEY (`cliente_id`) REFERENCES `cliente` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cliente_conta`
+--
+
+LOCK TABLES `cliente_conta` WRITE;
+/*!40000 ALTER TABLE `cliente_conta` DISABLE KEYS */;
+INSERT INTO `cliente_conta` VALUES (1,'4445','08404','2012-07-22',1,32),(6,'545345','345435','2012-07-23',2,24),(7,'3232','323232','2012-07-24',3,3),(8,'32434','3434','2012-07-24',10,23),(9,'2323','3435','2012-07-24',9,6),(10,'234343','34343','2012-07-24',12,22),(11,'3434','084041','2012-07-25',11,21),(12,'223','3232','2012-08-07',14,21),(13,'23423','23432','2012-08-07',15,23),(14,'324234','324324','2012-08-07',16,21),(15,'1111','2222','2012-08-29',17,20),(16,'2222','333333','2012-09-17',18,25),(17,'2434','2434','2012-09-30',19,10);
+/*!40000 ALTER TABLE `cliente_conta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cliente_socio`
+--
+
+DROP TABLE IF EXISTS `cliente_socio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cliente_socio` (
+  `cliente_id` bigint(20) NOT NULL,
+  `socio_id` bigint(20) NOT NULL,
+  PRIMARY KEY (`cliente_id`,`socio_id`),
+  KEY `FK_cliente_socio_socio_id` (`socio_id`),
+  CONSTRAINT `FK_cliente_socio_cliente_id` FOREIGN KEY (`cliente_id`) REFERENCES `cliente` (`id`),
+  CONSTRAINT `FK_cliente_socio_socio_id` FOREIGN KEY (`socio_id`) REFERENCES `socio` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cliente_socio`
+--
+
+LOCK TABLES `cliente_socio` WRITE;
+/*!40000 ALTER TABLE `cliente_socio` DISABLE KEYS */;
+INSERT INTO `cliente_socio` VALUES (1,1),(2,2),(2,4),(9,5),(11,6),(12,7),(1,9),(11,10),(1,11),(1,12),(1,13),(13,14),(21,15);
+/*!40000 ALTER TABLE `cliente_socio` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `emitente`
+--
+
+DROP TABLE IF EXISTS `emitente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `emitente` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `limite` decimal(20,2) DEFAULT NULL,
+  `ultima_consulta_serasa` date DEFAULT NULL,
+  `status` enum('ATIVO','INATIVO') DEFAULT NULL,
+  `observacao` text,
+  `entidade_id` bigint(20) DEFAULT NULL,
+  `limite_disponivel` decimal(20,2) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_emitente_entidade_id` (`entidade_id`),
+  CONSTRAINT `FK_emitente_entidade_id` FOREIGN KEY (`entidade_id`) REFERENCES `entidade` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `emitente`
+--
+
+LOCK TABLES `emitente` WRITE;
+/*!40000 ALTER TABLE `emitente` DISABLE KEYS */;
+INSERT INTO `emitente` VALUES (1,33333.33,NULL,'ATIVO','TETJFSDFSDF',2,975.44),(2,323.23,NULL,'ATIVO','<P>FSDFSDGJHDFKGFDG</P><P><BR /></P><P><BR /></P><P><BR /></P><P><BR /></P><P>FD</P><P>GFD</P><P>G</P><P>F</P><P>H</P><P>GFHGFHFHGFJHJ</P>',5,3000.00),(3,3242342.34,NULL,'ATIVO','GDGRETYTRYTRY',1,-1300.00),(4,435345.43,NULL,'ATIVO','',3,3000.00),(5,232.34,NULL,'ATIVO','WEREWRWERWER',9,-2000.00),(6,2132.13,NULL,'ATIVO','',15,5000.00),(7,1000.00,NULL,'ATIVO','TESTEEEEEEEE',18,900.00);
+/*!40000 ALTER TABLE `emitente` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `emitente_conta`
+--
+
+DROP TABLE IF EXISTS `emitente_conta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `emitente_conta` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `cheque_especial` tinyint(1) NOT NULL DEFAULT '0',
+  `agencia` varchar(10) NOT NULL,
+  `conta` varchar(20) NOT NULL,
+  `data_abertura` date NOT NULL,
+  `emitente_id` bigint(20) DEFAULT NULL,
+  `banco_id` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_emitente_conta_emitente_id` (`emitente_id`),
+  KEY `FK_emitente_conta_banco_id` (`banco_id`),
+  CONSTRAINT `FK_emitente_conta_banco_id` FOREIGN KEY (`banco_id`) REFERENCES `banco` (`id`),
+  CONSTRAINT `FK_emitente_conta_emitente_id` FOREIGN KEY (`emitente_id`) REFERENCES `emitente` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `emitente_conta`
+--
+
+LOCK TABLES `emitente_conta` WRITE;
+/*!40000 ALTER TABLE `emitente_conta` DISABLE KEYS */;
+INSERT INTO `emitente_conta` VALUES (2,1,'34234','23423','2000-09-01',2,10),(3,1,'4343434343','33333333333333333333','2009-09-01',1,5),(4,1,'4546565656','55555555555555555555','2010-10-01',2,6),(7,1,'323','23232','2010-10-01',3,10),(8,0,'243324','324234','2000-09-01',4,13),(9,1,'324324','23423','2000-09-01',5,8),(10,0,'323','2323','2000-10-01',NULL,NULL),(11,0,'111','2222','2000-10-01',NULL,NULL),(12,0,'4444','2222','2000-10-01',3,9),(13,1,'4324','324234','2001-11-01',3,17),(14,0,'2222','3333','2000-09-01',7,5);
+/*!40000 ALTER TABLE `emitente_conta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `entidade`
+--
+
+DROP TABLE IF EXISTS `entidade`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `entidade` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `tipo_renda_conjuge` enum('COMPROVADA','DECLARADA') DEFAULT NULL,
+  `telefone_trabalho` varchar(14) DEFAULT NULL,
+  `nacionalidade` varchar(80) DEFAULT NULL,
+  `estado_civil` enum('SOLTEIRO','CASADO','SEPARADO','DIVORCIADO','VIUVO') DEFAULT NULL,
+  `sexo` varchar(30) DEFAULT NULL,
+  `cnpj_cpf` varchar(14) NOT NULL,
+  `nome_mae` varchar(100) DEFAULT NULL,
+  `profissao_conjuge` varchar(40) DEFAULT NULL,
+  `capital_social` decimal(20,2) DEFAULT NULL,
+  `telefone_conjuge` varchar(14) DEFAULT NULL,
+  `spc_serasa` enum('NEGATIVADO','NAO_NEGATIVADO') DEFAULT NULL,
+  `data_conjuge` date DEFAULT NULL,
+  `profissao` varchar(60) DEFAULT NULL,
+  `renda_liquida` decimal(20,2) DEFAULT NULL,
+  `telefone3` varchar(14) DEFAULT NULL,
+  `fax` varchar(14) DEFAULT NULL,
+  `telefone2` varchar(14) DEFAULT NULL,
+  `referencia3` varchar(100) DEFAULT NULL,
+  `telefone1` varchar(14) DEFAULT NULL,
+  `nextel` varchar(14) DEFAULT NULL,
+  `referencia2` varchar(100) DEFAULT NULL,
+  `numero` varchar(8) NOT NULL,
+  `endereco_comercial_conjuge` varchar(100) DEFAULT NULL,
+  `email` varchar(160) NOT NULL,
+  `tipo_residencia` enum('PROPRIA','ALUGADA','PAIS_FAMILIA','TERCEIROS') DEFAULT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `celular` varchar(14) DEFAULT NULL,
+  `rg_conjuge` varchar(20) DEFAULT NULL,
+  `data` date DEFAULT NULL,
+  `razao_social` varchar(100) NOT NULL,
+  `rg` varchar(20) DEFAULT NULL,
+  `cargo` varchar(60) DEFAULT NULL,
+  `renda_conjuge` enum('PROPRIA','FAMILIAR') DEFAULT NULL,
+  `renda` enum('PROPRIA','FAMILIAR') DEFAULT NULL,
+  `trabalha_desde` date DEFAULT NULL,
+  `cep` varchar(10) DEFAULT NULL,
+  `ramo_atividade` varchar(100) DEFAULT NULL,
+  `nome_conjuge` varchar(100) DEFAULT NULL,
+  `referencia1` varchar(100) DEFAULT NULL,
+  `data_cadastro` date NOT NULL,
+  `telefone_mae` varchar(14) DEFAULT NULL,
+  `tipo_renda` enum('COMPROVADA','DECLARADA') DEFAULT NULL,
+  `orgao_expedidor` varchar(10) DEFAULT NULL,
+  `complemento` varchar(40) DEFAULT NULL,
+  `cpf_conjuge` varchar(14) DEFAULT NULL,
+  `numero_dependentes` varchar(2) DEFAULT NULL,
+  `bairro` varchar(100) DEFAULT NULL,
+  `cidade` varchar(100) DEFAULT NULL,
+  `estado` enum('AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO') DEFAULT NULL,
+  `inscricao_estadual` varchar(20) DEFAULT NULL,
+  `ramal` varchar(4) DEFAULT NULL,
+  `telefone` varchar(14) DEFAULT NULL,
+  `telefone_ramal_trabalho` varchar(4) DEFAULT NULL,
+  `endereco` varchar(100) NOT NULL,
+  `nome_pai` varchar(100) DEFAULT NULL,
+  `telefone_pai` varchar(14) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `cnpj_cpf` (`cnpj_cpf`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `entidade`
+--
+
+LOCK TABLES `entidade` WRITE;
+/*!40000 ALTER TABLE `entidade` DISABLE KEYS */;
+INSERT INTO `entidade` VALUES (1,NULL,'','BRASILEIRO','SOLTEIRO','MASCULINO','56513162000188','','',0.00,'','NAO_NEGATIVADO',NULL,'PROGRAMADOR',2000.00,'','8599999999','','','','','','02220','','ARMANDO-COUTO@HOTMAIL.COM','PAIS_FAMILIA','','3333333333','','1988-12-01','ANTONIO ARMANDO COUTO BEM FILHO','97002104191','',NULL,NULL,NULL,'','','','','2012-07-31','',NULL,'SSP/CE','','','2','COCO','FORTALEZA','CE','',NULL,'5555555555','','RUA VILEBALDO AGUIAR','',''),(2,NULL,'','',NULL,'','48777122917','','',343434322222222.22,'','NAO_NEGATIVADO',NULL,'',43242.34,'','2222222222','','','','','','00222','','JESSICA.ADAMY@GMAIL.COM',NULL,'TESTE','','','2000-01-30','TESTE 22222','','',NULL,NULL,NULL,'','TESTE','','','2012-07-24','',NULL,'','','','','COCO','FORTALEZA','CE','',NULL,'1111111111','','RUA TESTE 2','',''),(3,NULL,'','BRASILEIRO','SOLTEIRO','FEMININO','00476073358','','',232.32,'','NAO_NEGATIVADO',NULL,'VENDAS',675675675.67,'','4444444444','','','','','','00434','','ARMANDO-COUTO@HOTMAIL.COM','PAIS_FAMILIA','TETSTE','3333333333','','1999-12-29','TESTE 133          FDGFDG','88888888888888888888','',NULL,NULL,NULL,'','INFORMÁTICA','','4TERYTERYRYRT','2012-07-24','',NULL,'SSP/CE','','','02','COCO','FORTALEZA','CE','',NULL,'3333333333','','RUA TESTE 1','',''),(4,NULL,'','',NULL,'FEMININO','00476073356','','',34.43,'','NAO_NEGATIVADO',NULL,'',34343.43,'','5555555555','','','','','','00234','','COUTOARMANDO@GMAIL.COM',NULL,'SFGHGJFDGDF','','','2000-02-29','TESTE 4','','',NULL,NULL,NULL,'','FDGFDGD','','','2012-07-24','',NULL,'','','','','DSFSDF','SFDERE','CE','',NULL,'3444444444','','RUA TESTE 4','',''),(5,NULL,'','',NULL,'','00476073355','','',3232.43,'','NAO_NEGATIVADO',NULL,'',432435.43,'','4444444444','','','','','','00012','','COUTOARMANDO@GMAIL.COM',NULL,'DSDSDS','','','2000-01-31','TESTE 5','','',NULL,NULL,NULL,'','FSDFDSF','','','2012-07-24','',NULL,'','','','','COCO','FORTALEZA','CE','',NULL,'3333333333','','RUA TESTE 5','',''),(6,NULL,'','',NULL,'','177.638.224-22','','',0.00,'','NAO_NEGATIVADO',NULL,'',423345.35,'','4444444444','','','','','','00034','','COUTOARMANDO@GMAIL.COM',NULL,'','','',NULL,'ARMANDO PAI','','',NULL,NULL,NULL,'','','','','2012-07-24','',NULL,'','','','','','',NULL,'',NULL,'3333333333','','TESTE 6','',''),(7,NULL,'','',NULL,'','00476073353','','',0.00,'','NAO_NEGATIVADO',NULL,'',2343243.24,'','4444444444','','','','','','00333','','COUTOARMANDO@GMAIL.COM',NULL,'','','',NULL,'TESTE 7','','',NULL,NULL,NULL,'','','','','2012-07-24','',NULL,'','','','','','',NULL,'',NULL,'3333333333','','RUS TESTE 7','',''),(8,NULL,NULL,'',NULL,'','00476073352','','',42434.32,'',NULL,NULL,'',NULL,'','4444444444','','','','','','00022','','ARAMSA@TEE.COM',NULL,'FGSDFGKGFD','','','2000-02-01','TESTE ARMANDO','','',NULL,NULL,NULL,'','INFORMÁTICA','','','2012-07-31','',NULL,'','','','','SDFSDSG','TESTE','AL','',NULL,'3333333333',NULL,'EWRWETERT','',''),(9,NULL,'','',NULL,'MASCULINO','00476073351','','',0.00,'','NAO_NEGATIVADO',NULL,'',4234.32,'','8888888888','','','','','','00223','','ARMANDO@HOTMAIL.COM',NULL,'','','',NULL,'TESTE LOCAL','','',NULL,NULL,NULL,'','','','','2012-08-07','',NULL,'','','','','','',NULL,'',NULL,'9999999999','','RUA TESTE LOCAL','',''),(12,NULL,'','',NULL,'','00476073350','','',0.00,'','NAO_NEGATIVADO',NULL,'',4.34,'','4444444444','','','','','','00033','','DSAD@SFSD.COM',NULL,'','','',NULL,'TESTE LOCAL 2','','',NULL,NULL,NULL,'','','','','2012-08-07','',NULL,'','','','','','',NULL,'',NULL,'3333333333','','TESTE','',''),(13,NULL,'','',NULL,'','00476073349','','',0.00,'','NAO_NEGATIVADO',NULL,'',3243.24,'','5555555555','','','','','','03343','','SDFGSD@HDFD.COM',NULL,'','','',NULL,'TESTE LOCAL 3','','',NULL,NULL,NULL,'','','','','2012-08-07','',NULL,'','','','','','',NULL,'',NULL,'4444444444','','RUA TESTE 3','',''),(15,NULL,NULL,NULL,NULL,NULL,'00476073348',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'3333333333',NULL,NULL,NULL,'',NULL,'00343',NULL,'DASS@DSADAS.COM',NULL,NULL,'',NULL,NULL,'RFSDFDS',NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,'2012-08-07',NULL,NULL,NULL,'',NULL,NULL,'','',NULL,NULL,NULL,'2222222222',NULL,'21321',NULL,NULL),(16,NULL,'','',NULL,'','00476073347','','',0.00,'','NAO_NEGATIVADO',NULL,'',20000.00,'','3434343434','','','','','','02222','','SAFSDFDS@TEJDFF.COM','TERCEIROS','','','',NULL,'TESTE LOCAL','','',NULL,NULL,NULL,'','','','','2012-08-29','','COMPROVADA','','','','','','','RN','',NULL,'3434343434','','RUS TESTE','',''),(17,NULL,'','',NULL,'MASCULINO','00476073343','','',0.00,'','NAO_NEGATIVADO',NULL,'',10000.00,'','8500000000','','','','','','00012','','ARMANDO-COUTO@HOTMAIL.COM',NULL,'','','',NULL,'ARMANDO TESTE 17/09','','',NULL,NULL,NULL,'','','','','2012-09-17','',NULL,'','','','','','',NULL,'',NULL,'8588888888','','RUA TESTE','',''),(18,NULL,NULL,NULL,NULL,NULL,'00476073342',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'4444444444',NULL,NULL,NULL,'',NULL,'00344',NULL,'ARASBSH@D.COM',NULL,NULL,'',NULL,NULL,'ARMANDO TESTE 18/09',NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,'2012-09-17',NULL,NULL,NULL,'',NULL,NULL,'','',NULL,NULL,NULL,'3333333333',NULL,'RUA TESTE',NULL,NULL),(22,NULL,NULL,NULL,NULL,NULL,'74217327803',NULL,NULL,332343.24,NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,'00033',NULL,'SDFASD@DSFDS.COM',NULL,'SDHGKFDSJG',NULL,NULL,'2000-12-11','FEGTER',NULL,NULL,NULL,NULL,NULL,'','SAFDSFDS',NULL,NULL,'2012-10-04',NULL,NULL,NULL,'',NULL,NULL,'WEREWR','WEREWR','RR','',NULL,'2222222222',NULL,'GFDG',NULL,NULL),(23,NULL,NULL,'SDFSDF','DIVORCIADO','MASCULINO','54076262336','',NULL,NULL,NULL,NULL,NULL,'SDFDSF',NULL,NULL,NULL,NULL,NULL,NULL,'',NULL,'00333',NULL,'SADFDSFDS@SDFSF.COM','ALUGADA',NULL,'2222222222','','2000-11-11','SDFDSFSDFS','423432',NULL,NULL,NULL,NULL,'',NULL,'',NULL,'2012-10-04',NULL,NULL,'23SDFDSF','','','02','SDFSDF','SDFSDF','RS',NULL,NULL,'',NULL,'SDFFDSF','',NULL);
+/*!40000 ALTER TABLE `entidade` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fatoranfac`
+--
+
+DROP TABLE IF EXISTS `fatoranfac`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `fatoranfac` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `media_baixa` decimal(4,2) NOT NULL,
+  `data` date NOT NULL,
+  `fator_anfac` decimal(4,2) NOT NULL,
+  `media_alta` decimal(4,2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fatoranfac`
+--
+
+LOCK TABLES `fatoranfac` WRITE;
+/*!40000 ALTER TABLE `fatoranfac` DISABLE KEYS */;
+INSERT INTO `fatoranfac` VALUES (1,3.45,'2012-03-03',4.56,5.67),(2,4.00,'2012-10-03',3.40,5.60);
+/*!40000 ALTER TABLE `fatoranfac` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `historico`
+--
+
+DROP TABLE IF EXISTS `historico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `historico` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `usuario_logado` varchar(255) NOT NULL,
+  `acao` varchar(255) NOT NULL,
+  `data_cadastro` date NOT NULL,
+  `status` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=154 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `historico`
+--
+
+LOCK TABLES `historico` WRITE;
+/*!40000 ALTER TABLE `historico` DISABLE KEYS */;
+INSERT INTO `historico` VALUES (1,'ADMINISTRADOR MARTER','CADASTRO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO, COM SUCESSO.','2012-07-22','ATIVO'),(2,'ADMINISTRADOR MARTER','CADASTRO DO(A) EMITENTE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 2, COM SUCESSO.','2012-07-22','ATIVO'),(3,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1, COM SUCESSO.','2012-07-22','ATIVO'),(4,'Usuário Externo','ENVIO DE E-MAIL DO(A) PRÉ-CADASTRO CLIENTE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1, COM SUCESSO.','2012-07-22','ATIVO'),(5,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073356, RAZÃO SOCIAL/NOME: TESTE 4, COM SUCESSO.','2012-07-23','ATIVO'),(6,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 2, COM SUCESSO.','2012-07-23','ATIVO'),(7,'ADMINISTRADOR MARTER','DESATIVADO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073356, RAZÃO SOCIAL/NOME: TESTE 4, COM SUCESSO.','2012-07-23','ATIVO'),(8,'ADMINISTRADOR MARTER','ALTERADO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222, COM SUCESSO.','2012-07-23','ATIVO'),(9,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1, COM SUCESSO.','2012-07-23','ATIVO'),(10,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1, COM SUCESSO.','2012-07-23','ATIVO'),(11,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1, COM SUCESSO.','2012-07-23','ATIVO'),(12,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1, COM SUCESSO.','2012-07-23','ATIVO'),(13,'ADMINISTRADOR MARTER','CADASTRO DO(A) EMITENTE CNPJ/CPF: 00476073355, RAZÃO SOCIAL/NOME: TESTE 5, COM SUCESSO.','2012-07-23','ATIVO'),(14,'ADMINISTRADOR MARTER','CADASTRO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073354, RAZÃO SOCIAL/NOME: TESTE 6, COM SUCESSO.','2012-07-24','ATIVO'),(15,'ADMINISTRADOR MARTER','ALTERADO DO(A) FATOR ANFAC: , 34.34 MÉDIA BAIXA: 43.24 MÉDIA ALTA: 32.43, COM SUCESSO.','2012-07-24','ATIVO'),(16,'Usuário Externo','ENVIO DE E-MAIL DO(A) PRÉ-CADASTRO CLIENTE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222, COM SUCESSO.','2012-07-24','ATIVO'),(17,'ADMINISTRADOR MARTER','CADASTRO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073353, RAZÃO SOCIAL/NOME: TESTE 7, COM SUCESSO.','2012-07-24','ATIVO'),(18,'ADMINISTRADOR MARTER','ALTERADO DO(A) EMITENTE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222, COM SUCESSO.','2012-07-24','ATIVO'),(19,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO, COM SUCESSO.','2012-07-24','ATIVO'),(20,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO, COM SUCESSO.','2012-07-24','ATIVO'),(21,'ADMINISTRADOR MARTER','ALTERADO DO(A) EMITENTE CNPJ/CPF: 00476073355, RAZÃO SOCIAL/NOME: TESTE 5, COM SUCESSO.','2012-07-24','ATIVO'),(22,'ADMINISTRADOR MARTER','ALTERADO DO(A) EMITENTE CNPJ/CPF: 00476073355, RAZÃO SOCIAL/NOME: TESTE 5, COM SUCESSO.','2012-07-24','ATIVO'),(23,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1, COM SUCESSO.','2012-07-24','ATIVO'),(24,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1, COM SUCESSO.','2012-07-24','ATIVO'),(25,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO, COM SUCESSO.','2012-07-24','ATIVO'),(26,'USUÁRIO EXTERNO','Envio de E-mail do(a) Pré-Cadastro Cliente CNPJ/CPF: 00476073355, Razão Social/Nome: TESTE 5.','2012-07-24','Análise'),(27,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222.','2012-07-24','ATIVO'),(28,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073354, RAZÃO SOCIAL/NOME: TESTE 6.','2012-07-24','ATIVO'),(29,'USUÁRIO EXTERNO','ENVIO DE E-MAIL DO(A) PRÉ-CADASTRO CLIENTE CNPJ/CPF: 00476073356, RAZÃO SOCIAL/NOME: TESTE 4.','2012-07-24','ANÁLISE'),(30,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073356, RAZÃO SOCIAL/NOME: TESTE 4.','2012-07-24','ATIVO'),(31,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222.','2012-07-25','NÃO TEM STATUS'),(32,'ADMINISTRADOR MARTER','DESATIVADO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222.','2012-07-25','NÃO TEM STATUS'),(33,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222.','2012-07-25','NÃO TEM STATUS'),(34,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1.','2012-07-25','NÃO TEM STATUS'),(35,'ADMINISTRADOR MARTER','ALTERADO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1.','2012-07-25','NÃO TEM STATUS'),(36,'ADMINISTRADOR MARTER','ALTERADO DO(A) EMITENTE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222.','2012-07-25','ATIVO'),(37,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073355, RAZÃO SOCIAL/NOME: TESTE 5.','2012-07-25','ATIVO'),(38,'ADMINISTRADOR MARTER','ALTERADO DO(A) EMITENTE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222.','2012-07-26','ATIVO'),(39,'ADMINISTRADOR MARTER','ALTERADO DO(A) PARAMETROS DO SISTEMA TAXA DE DEVOLUÇÃO: , 1.00 TIPO DE JUROS: COMPOSTO.','2012-07-26','NÃO TEM STATUS'),(40,'ADMINISTRADOR MARTER','ALTERADO DO(A) PARAMETROS DO SISTEMA TAXA DE DEVOLUÇÃO: , 1.00 TIPO DE JUROS: COMPOSTO.','2012-07-26','NÃO TEM STATUS'),(41,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1.','2012-07-28','ATIVO'),(42,'ADMINISTRADOR MARTER','Cadastro do(a) Cheque do Cliente CNPJ/CPF: 00476073359, Razão Social/Nome: ANTONIO ARMANDO COUTO BEM FILHO / Emitente CNPJ/CPF: 00476073355.','2012-07-29','ABERTO'),(43,'ADMINISTRADOR MARTER','ALTERADO DO(A) EMITENTE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222.','2012-07-30','Ativo'),(44,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-30','ABERTO'),(45,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 1.','2012-07-30','Ativo'),(46,'ADMINISTRADOR MARTER','ALTERADO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 133.','2012-07-30','NÃO TEM STATUS'),(47,'ADMINISTRADOR MARTER','ALTERADO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 133.','2012-07-30','NÃO TEM STATUS'),(48,'ADMINISTRADOR MARTER','CADASTRO DO(A) EMITENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-07-31','Ativo'),(49,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(50,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073359.','2012-07-31','ABERTO'),(51,'ADMINISTRADOR MARTER','ALTERADO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(52,'ADMINISTRADOR MARTER','ALTERADO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(53,'ADMINISTRADOR MARTER','ALTERADO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(54,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073355.','2012-07-31','ABERTO'),(55,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 133 / EMITENTE CNPJ/CPF: 00476073359.','2012-07-31','ABERTO'),(56,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073355, RAZÃO SOCIAL/NOME: TESTE 5 / EMITENTE CNPJ/CPF: 00476073355.','2012-07-31','ABERTO'),(57,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(58,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073355.','2012-07-31','ABERTO'),(59,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(60,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(61,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(62,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073356, RAZÃO SOCIAL/NOME: TESTE 4.','2012-07-31','NÃO TEM STATUS'),(63,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073352, RAZÃO SOCIAL/NOME: TESTE ARMANDO.','2012-07-31','NÃO TEM STATUS'),(64,'ADMINISTRADOR MARTER','CADASTRO DO(A) SÓCIO JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073355, RAZÃO SOCIAL/NOME: TESTE 5.','2012-07-31','NÃO TEM STATUS'),(65,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073359.','2012-07-31','ABERTO'),(66,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073357, RAZÃO SOCIAL/NOME: TESTE 22222 / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(67,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073354, RAZÃO SOCIAL/NOME: TESTE 6 / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(68,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073355.','2012-07-31','ABERTO'),(69,'ADMINISTRADOR MARTER','CADASTRO DO(A) EMITENTE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073358, RAZÃO SOCIAL/NOME: TESTE 133.','2012-07-31','Ativo'),(70,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(71,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073355.','2012-07-31','ABERTO'),(72,'USUÁRIO EXTERNO','ENVIO DE E-MAIL DO(A) PRÉ-CADASTRO CLIENTE CNPJ/CPF: 00476073352, RAZÃO SOCIAL/NOME: TESTE ARMANDO.','2012-07-31','Análise'),(73,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-07-31','ABERTO'),(74,'ADMINISTRADOR MARTER','ALTERADO DO(A) SÓCIO E ENTIDADE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-01','NÃO TEM STATUS'),(75,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073355.','2012-08-01','ABERTO'),(76,'ADMINISTRADOR MARTER','CADASTRO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073351, RAZÃO SOCIAL/NOME: TESTE LOCAL.','2012-08-07','Ativo'),(77,'ADMINISTRADOR MARTER','CADASTRO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073350, RAZÃO SOCIAL/NOME: TESTE LOCAL 2.','2012-08-07','Ativo'),(78,'ADMINISTRADOR MARTER','CADASTRO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073349, RAZÃO SOCIAL/NOME: TESTE LOCAL 3.','2012-08-07','Ativo'),(79,'ADMINISTRADOR MARTER','CADASTRO DO(A) EMITENTE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073351, RAZÃO SOCIAL/NOME: TESTE LOCAL.','2012-08-07','Ativo'),(80,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073350, RAZÃO SOCIAL/NOME: TESTE LOCAL 2 / EMITENTE CNPJ/CPF: 00476073359.','2012-08-07','ABERTO'),(81,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073350, RAZÃO SOCIAL/NOME: TESTE LOCAL 2 / EMITENTE CNPJ/CPF: 00476073358.','2012-08-07','ABERTO'),(82,'ADMINISTRADOR MARTER','CADASTRO DO(A) EMITENTE CNPJ/CPF: 00476073348, RAZÃO SOCIAL/NOME: RFSDFDS.','2012-08-07','Ativo'),(83,'ADMINISTRADOR MARTER','DESATIVADO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073352, RAZÃO SOCIAL/NOME: TESTE ARMANDO.','2012-08-08','Reprovado'),(84,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073351.','2012-08-09','ABERTO'),(85,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073351.','2012-08-09','ABERTO'),(86,'ADMINISTRADOR MARTER','ALTERADO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073351.','2012-08-09','ABERTO'),(87,'ADMINISTRADOR MARTER','ALTERADO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073351.','2012-08-09','ABERTO'),(88,'ADMINISTRADOR MARTER','ALTERADO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073351.','2012-08-09','ABERTO'),(89,'ADMINISTRADOR MARTER','ALTERADO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073351.','2012-08-09','ABERTO'),(90,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-08-10','ABERTO'),(91,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073359.','2012-08-10','ABERTO'),(92,'ADMINISTRADOR MARTER','ALTERADO DO(A) CHEQUE DO CLIENTE CNPJ/CPF: 00476073359, RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE CNPJ/CPF: 00476073357.','2012-08-10','ABERTO'),(93,'ADMINISTRADOR MARTER','CADASTRO DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073347, RAZÃO SOCIAL/NOME: TESTE LOCAL.','2012-08-29','Ativo'),(94,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE J� ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073359, RAZ�O SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-29','Ativo'),(95,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE J� ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073359, RAZ�O SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-29','Ativo'),(96,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE J� ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073359, RAZ�O SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-29','Ativo'),(97,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE J� ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073359, RAZ�O SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-29','Ativo'),(98,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE J� ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073359, RAZ�O SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-29','Ativo'),(99,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE J� ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073359, RAZ�O SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-29','Ativo'),(100,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE J� ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073359, RAZ�O SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-29','Ativo'),(101,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE J� ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073358, RAZ�O SOCIAL/NOME: TESTE 133          FDGFDG.','2012-08-29','Ativo'),(102,'USUÁRIO EXTERNO','ENVIO DE E-MAIL DO(A) CLIENTE E ENTIDADE CNPJ/CPF: 00476073359, RAZ�O SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-08-30','Ativo'),(103,'ADMINISTRADOR MARTER','ALTERADO DO(A) PARAMETROS DO SISTEMA TAXA DE DEVOLU��O: , 1.00 TIPO DE JUROS: COMPOSTO.','2012-09-06','N�O TEM STATUS'),(104,'ADMINISTRADOR MARTER','ALTERADO DO(A) CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073354, RAZÃO SOCIAL/NOME: ARMANDO PAI.','2012-09-07','Ativo'),(105,'ADMINISTRADOR MARTER','CADASTRO DO(A) CHEQUE DO CLIENTE CNPJ/CPF:00476073354, RAZÃO SOCIAL/NOME:ARMANDO PAI/ EMITENTEBR.COM.VIACREDIT.DOMAIN.ENTIDADE@114316ACNPJ/CPF:00476073354.','2012-09-07','Aberto'),(106,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073354,  RAZÃO SOCIAL/NOME: ARMANDO PAI / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@200467 CNPJ/CPF: 00476073354.','2012-09-07','Aberto'),(107,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073359,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@14BB59A CNPJ/CPF: 00476073359.','2012-09-16','COMPENSADO'),(108,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073355,  RAZÃO SOCIAL/NOME: TESTE 5 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@1EF6D79 CNPJ/CPF: 00476073355.','2012-09-16','COMPENSADO'),(109,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073359,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@172CD95 CNPJ/CPF: 00476073359.','2012-09-16','DEVOLVIDO'),(110,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CLIENTE E ENTIDADE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09.','2012-09-17','ATIVO'),(111,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@595F9 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(112,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@1BAE8A4 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(113,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@CF2031 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(114,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@1FC6DA2 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(115,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@4868D3 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(116,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@112D23B CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(117,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@AF567F CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(118,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@19158D0 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(119,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@10177BF CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(120,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@188E8F9 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(121,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@3F1712 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(122,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@1EAB160 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(123,'ADMINISTRADOR MARTER','CADASTRO DO(A)  EMITENTE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073342,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 18/09.','2012-09-17','ATIVO'),(124,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@E067B1 CNPJ/CPF: 00476073343.','2012-09-17','ABERTO'),(125,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073351,  RAZÃO SOCIAL/NOME: TESTE LOCAL / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@1D84D9F CNPJ/CPF: 00476073351.','2012-09-17','ABERTO'),(126,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073351,  RAZÃO SOCIAL/NOME: TESTE LOCAL / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@27D419 CNPJ/CPF: 00476073351.','2012-09-17','ABERTO'),(127,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073351,  RAZÃO SOCIAL/NOME: TESTE LOCAL / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@17BE6F CNPJ/CPF: 00476073351.','2012-09-18','COMPENSADO'),(128,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 00476073343,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 17/09 / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@1F17A14 CNPJ/CPF: 00476073343.','2012-09-18','COMPENSADO'),(129,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073359,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(130,'ADMINISTRADOR MARTER','ALTERADO DO(A)  EMITENTE CNPJ/CPF: 00476073355,  RAZÃO SOCIAL/NOME: TESTE 5.','2012-09-20','ATIVO'),(131,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 17763822422,  RAZÃO SOCIAL/NOME: ARMANDO PAI.','2012-09-20','ATIVO'),(132,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 177.638.224-22,  RAZÃO SOCIAL/NOME: ARMANDO PAI.','2012-09-20','ATIVO'),(133,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 177.638.224-22,  RAZÃO SOCIAL/NOME: ARMANDO PAI.','2012-09-20','ATIVO'),(134,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 117.682.306-09,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(135,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 117.682.306-09,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(136,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 11768230609,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(137,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 11768230609,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(138,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 25712308000190,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(139,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 25712308000194,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(140,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 25712308001949,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(141,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 25712308001945,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(142,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 25712308001945,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(143,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 56513162000188,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO.','2012-09-20','ATIVO'),(144,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 56513162000188,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@1175158 CNPJ/CPF: 56513162000188.','2012-09-21','ABERTO'),(145,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 00476073342,  RAZÃO SOCIAL/NOME: ARMANDO TESTE 18/09.','2012-09-30','ATIVO'),(146,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CLIENTE E ENTIDADE JÁ ESTAVA CADASTRADO NO BANCO CNPJ/CPF: 48777122917,  RAZÃO SOCIAL/NOME: TESTE 22222.','2012-09-30','ATIVO'),(147,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 56513162000188,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@CDAE48 CNPJ/CPF: 56513162000188.','2012-10-03','ABERTO'),(148,'ADMINISTRADOR MARTER','ALTERADO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 56513162000188,  RAZÃO SOCIAL/NOME: ANTONIO ARMANDO COUTO BEM FILHO / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@8E9FAC CNPJ/CPF: 56513162000188.','2012-10-03','COMPENSADO'),(149,'ADMINISTRADOR MARTER','ALTERADO DO(A)  FATOR ANFAC: , 3.4 MÉDIA BAIXA: 4.0 MÉDIA ALTA: 5.6.','2012-10-03','NÃO TEM STATUS'),(150,'USUÁRIO EXTERNO','ENVIO DE E-MAIL DO(A) PR�-CADASTRO CLIENTE CNPJ/CPF: 74217327803, RAZ�O SOCIAL/NOME: FEGTER.','2012-10-04','ANÁLISE'),(151,'ADMINISTRADOR MARTER','ALTERADO DO(A)  EMITENTE CNPJ/CPF: 48777122917,  RAZÃO SOCIAL/NOME: TESTE 22222.','2012-10-06','ATIVO'),(152,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 177.638.224-22,  RAZÃO SOCIAL/NOME: ARMANDO PAI / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@3196E2 CNPJ/CPF: 177.638.224-22.','2012-10-07','ABERTO'),(153,'ADMINISTRADOR MARTER','CADASTRO DO(A)  CHEQUE DO CLIENTE CNPJ/CPF: 177.638.224-22,  RAZÃO SOCIAL/NOME: ARMANDO PAI / EMITENTE BR.COM.VIACREDIT.DOMAIN.ENTIDADE@A6B0C6 CNPJ/CPF: 177.638.224-22.','2012-10-07','ABERTO');
+/*!40000 ALTER TABLE `historico` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `param`
+--
+
+DROP TABLE IF EXISTS `param`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `param` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `tipo_juros` enum('SIMPLES','COMPOSTO','CHEQUE') DEFAULT NULL,
+  `data` date NOT NULL,
+  `taxa_devolucao` decimal(4,2) DEFAULT NULL,
+  `compensacao` int(11) DEFAULT NULL,
+  `taxa_iof` decimal(4,2) DEFAULT NULL,
+  `termo_responsabilidade` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `param`
+--
+
+LOCK TABLES `param` WRITE;
+/*!40000 ALTER TABLE `param` DISABLE KEYS */;
+INSERT INTO `param` VALUES (1,'COMPOSTO','2012-09-06',1.00,2,4.00,'Declaro-me responsável pela legitimidade da procedência, assim como serei avalista dos cheques acima relacionados, ressarcindo no prazo de 24 horas no caso de devolução ou solicitação de prorrogação e arcando com quaisqer despesas judiciais ou extrajudiciais que porventura houverem com a cobrança dos mesmos.');
+/*!40000 ALTER TABLE `param` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `socio`
+--
+
+DROP TABLE IF EXISTS `socio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `socio` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `entidade_id` bigint(20) NOT NULL,
+  `observacao` text,
+  PRIMARY KEY (`id`),
+  KEY `FK_socio_entidade_id` (`entidade_id`),
+  CONSTRAINT `FK_socio_entidade_id` FOREIGN KEY (`entidade_id`) REFERENCES `entidade` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `socio`
+--
+
+LOCK TABLES `socio` WRITE;
+/*!40000 ALTER TABLE `socio` DISABLE KEYS */;
+INSERT INTO `socio` VALUES (1,3,''),(2,1,''),(4,2,''),(5,1,''),(6,1,''),(7,3,''),(9,2,'<p>Tetseeeeee</p><p>&nbsp;</p><p>&nbsp;</p><p>fs</p><p>df</p><p>ds</p><p>g</p><p>fd</p><p>gfdgfdg</p>'),(10,3,'<p>egfdsfkdsgdf</p><p>g</p><p>df</p><p>gd</p><p>fh</p><p>ghg</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>hfghgfh</p>'),(11,4,''),(12,8,'fghfghfghgf'),(13,5,''),(14,1,''),(15,23,'');
+/*!40000 ALTER TABLE `socio` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `usuario`
+--
+
+DROP TABLE IF EXISTS `usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usuario` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `estado` tinyint(1) NOT NULL DEFAULT '0',
+  `perfil` enum('FUNCIONARIO','ADMINISTRADOR') NOT NULL,
+  `login` varchar(60) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `senha` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuario`
+--
+
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,1,'ADMINISTRADOR','ADMIN','ADMINISTRADOR MARTER','202cb962ac59075b964b07152d234b70'),(2,1,'FUNCIONARIO','FUNCIONARIO','LOPESFF','123');
+/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2012-10-07 20:15:00
